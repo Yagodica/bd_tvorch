@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F18E032-A858-5A4A-72CB-D27FE9B038E0" name="ЗАКАЗ">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C93293C2-5CD5-BDDB-C729-7792178D9FA0" name="ЗАКУПКА">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:20:18 UTC</createdTime>
+<createdTime>2024-11-28 13:08:16 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -14,11 +14,11 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>ORDER</preferredAbbreviation>
+<preferredAbbreviation>PURCHASE</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id заказа" id="BA475D17-D75B-828C-B6BA-3FB5552E7177">
+<Attribute name="id закупки" id="DF50EA45-33A0-2EA9-CAC5-E133D5F64905">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:24:22 UTC</createdTime>
+<createdTime>2024-11-28 13:08:38 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -27,11 +27,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>order_id</preferredAbbreviation>
+<preferredAbbreviation>purchase_id</preferredAbbreviation>
 </Attribute>
-<Attribute name="Дата заказа" id="ABAE1678-0A59-9498-A62D-346216721500">
+<Attribute name="Дата закупки" id="E7EF4B3B-8D6D-D21B-C2F4-A656E2A6F1C5">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:24:24 UTC</createdTime>
+<createdTime>2024-11-28 13:08:38 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -40,45 +40,30 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>order_date</preferredAbbreviation>
+<preferredAbbreviation>purchase_date</preferredAbbreviation>
 </Attribute>
-<Attribute name="id адрес" id="6F1157AE-909C-C845-6E1C-83B1F71DC22C">
+<Attribute name="Общая стоимость" id="F9FE5ACE-47FB-04A3-C56E-1CD44A1C8120">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-28 11:21:21 UTC</createdTime>
-<generatorID>6275476C-EDC0-3719-5F60-C16E6E202B57</generatorID>
+<createdTime>2024-11-28 13:08:40 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
-<referedAttribute>9A7F363D-AA85-7065-D61A-BCF111DF84B2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>total_cost</preferredAbbreviation>
 </Attribute>
-<Attribute name="id статуса заказа" id="A9C1AFE9-FD10-7C52-8558-EC28DA1E8F90">
+<Attribute name="id подкатегории" id="43B1E2BC-039D-E0D6-E5B0-04B5A75F492F">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-28 12:15:52 UTC</createdTime>
-<generatorID>E701AA95-0374-5334-687D-7BCC36A143DC</generatorID>
+<createdTime>2024-11-28 13:15:35 UTC</createdTime>
+<generatorID>313CB39D-210C-C4BF-30CD-72C7A4AEEB5F</generatorID>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
-<referedAttribute>A59CFC9F-FD70-04A4-56AE-33605A4BF850</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id клиента" id="49F9D58D-77D8-230D-A98E-8C9027273E3D">
-<createdBy>ivan</createdBy>
-<createdTime>2024-11-28 12:15:58 UTC</createdTime>
-<generatorID>6C78DF0C-3CAE-F7D9-FE5C-097D5E1CB4BD</generatorID>
-<ownerDesignName>Доставка</ownerDesignName>
-<engineerTo>
-<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
-</engineerTo>
-<referedAttribute>A419A065-CBBC-C861-8189-16A4D2E910B8</referedAttribute>
+<referedAttribute>7778E694-EC79-A875-9557-3FDE55F5D8B6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -86,16 +71,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="DE10FF74-7504-7E78-0F8A-3F1B0C175D4D" name="Заказ PK">
+<identifier id="0EDBDB33-ED03-6D7E-604A-54EB8123C36A" name="ЗАКУПКА PK">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:29:39 UTC</createdTime>
+<createdTime>2024-11-28 13:09:28 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BA475D17-D75B-828C-B6BA-3FB5552E7177</attributeRef>
+<attributeRef>DF50EA45-33A0-2EA9-CAC5-E133D5F64905</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

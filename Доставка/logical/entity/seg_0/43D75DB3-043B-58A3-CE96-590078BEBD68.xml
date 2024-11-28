@@ -71,7 +71,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>price</preferredAbbreviation>
 </Attribute>
-<Attribute name="Наличие" id="651B5A18-971F-3D41-DB23-1BEDAE6E2811">
+<Attribute name="Остаток" id="651B5A18-971F-3D41-DB23-1BEDAE6E2811">
 <createdBy>ivan</createdBy>
 <createdTime>2024-11-28 12:50:02 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
@@ -82,7 +82,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>availability</preferredAbbreviation>
+<preferredAbbreviation>remaining</preferredAbbreviation>
+</Attribute>
+<Attribute name="id категории" id="FBA6DFDA-040C-AC11-0D80-46DBD9CDB3CE">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 13:04:24 UTC</createdTime>
+<generatorID>3CCA9D2D-9D4C-3548-7CDB-7E7ADD697220</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<referedAttribute>5EF7DADA-828C-5668-6E14-3B6418F1B213</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
