@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8FD3ACE7-25A1-9BFB-D85C-183E6FDF1656" name="УЛИЦА">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18B11951-1BE1-53CD-34CE-4ED29550FE67" name="ПОДКАТЕГОРИЯ">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-27 13:39:48 UTC</createdTime>
+<createdTime>2024-11-28 12:40:24 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -14,11 +14,11 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>STREET</preferredAbbreviation>
+<preferredAbbreviation>SUBCATEGORY</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id улицы" id="00B0BB4D-4C75-C985-5F80-083C175CD9CE">
+<Attribute name="id подкатегории" id="7778E694-EC79-A875-9557-3FDE55F5D8B6">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-27 13:40:26 UTC</createdTime>
+<createdTime>2024-11-28 12:41:01 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -27,11 +27,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>id_street</preferredAbbreviation>
+<preferredAbbreviation>subcategory_id</preferredAbbreviation>
 </Attribute>
-<Attribute name="Наименование улицы" id="A1915C68-7707-184E-D1AA-9158A4439BFC">
+<Attribute name="Название подкатегории" id="B40ADD89-6ACB-83ED-1ED5-7B6F7B42B3F1">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-27 13:40:26 UTC</createdTime>
+<createdTime>2024-11-28 12:41:02 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -41,34 +41,20 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
-<preferredAbbreviation>street_name</preferredAbbreviation>
-</Attribute>
-<Attribute name="id города" id="E5E59A80-E216-C84A-D848-7CB1CDF97934">
-<createdBy>ivan</createdBy>
-<createdTime>2024-11-28 10:28:34 UTC</createdTime>
-<generatorID>E4722C1A-5A93-DEE6-2B23-70672A22D2D1</generatorID>
-<ownerDesignName>Доставка</ownerDesignName>
-<engineerTo>
-<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
-</engineerTo>
-<referedAttribute>3B3419FB-066A-9665-3308-027846D9A1A4</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>subcategory_name</preferredAbbreviation>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A1293130-1DBB-19BA-966B-3B128947B70E" name="Улица PK">
+<identifier id="6D2BB2AB-086F-434E-6F29-EDE623845258" name="ПОДКАТЕГОРИЯ PK">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-27 13:43:21 UTC</createdTime>
+<createdTime>2024-11-28 12:41:51 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>00B0BB4D-4C75-C985-5F80-083C175CD9CE</attributeRef>
+<attributeRef>7778E694-EC79-A875-9557-3FDE55F5D8B6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

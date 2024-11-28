@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9DCC651-FE00-36CE-AC25-82A73171829C" name="ДОМ">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FE5B0D7-12AE-342F-7AA1-D3BB2DBB0AED" name="АДРЕС">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:44:56 UTC</createdTime>
+<createdTime>2024-11-28 10:20:06 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -14,11 +14,11 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>HOUSE</preferredAbbreviation>
+<preferredAbbreviation>ADDRESS</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id дома" id="57034A64-0AAB-F11D-5B73-C6D95E6C4E23">
+<Attribute name="id адрес" id="9A7F363D-AA85-7065-D61A-BCF111DF84B2">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:46:20 UTC</createdTime>
+<createdTime>2024-11-28 10:20:55 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
@@ -27,45 +27,47 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>id_house</preferredAbbreviation>
+<preferredAbbreviation>address_id</preferredAbbreviation>
 </Attribute>
-<Attribute name="Номер дома" id="BF514E3D-7253-3F05-7DF8-37F5CE775343">
+<Attribute name="id дома" id="28A4AF19-5C5E-39E2-AB28-BAA27FBB3DBA">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-26 18:46:20 UTC</createdTime>
-<ownerDesignName>Доставка</ownerDesignName>
-<engineerTo>
-<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<preferredAbbreviation>house_num</preferredAbbreviation>
-</Attribute>
-<Attribute name="id улицы" id="6EE4D894-137A-3FAC-7507-FAD13D07EBB7">
-<createdBy>ivan</createdBy>
-<createdTime>2024-11-28 10:31:39 UTC</createdTime>
-<generatorID>66FBD278-E08C-17C3-A0E4-1487378B01A7</generatorID>
-<ownerDesignName>Доставка</ownerDesignName>
-<engineerTo>
-<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
-</engineerTo>
-<referedAttribute>00B0BB4D-4C75-C985-5F80-083C175CD9CE</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id адрес" id="08337440-961C-6C56-401A-202A495A11FD">
-<createdBy>ivan</createdBy>
-<createdTime>2024-11-28 10:55:42 UTC</createdTime>
+<createdTime>2024-11-28 10:56:29 UTC</createdTime>
 <generatorID>ACEA0EA9-29AB-CAD6-47A6-57CC7D568431</generatorID>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>9A7F363D-AA85-7065-D61A-BCF111DF84B2</referedAttribute>
+<referedAttribute>57034A64-0AAB-F11D-5B73-C6D95E6C4E23</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id квартиры" id="D2369F73-53F7-880A-9AD0-91DBDF6E4A5B">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 10:56:50 UTC</createdTime>
+<generatorID>484C6648-1061-347E-8D2B-6AD0A2577A97</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>45EEF110-0D41-68D5-BAD5-E2E7C7E5634A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id клиента" id="4D950B8C-C644-DB12-D8D1-35B31427AAF1">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 12:26:48 UTC</createdTime>
+<generatorID>63387210-B708-042A-6B5E-5A9D6F1A0C67</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<referedAttribute>A419A065-CBBC-C861-8189-16A4D2E910B8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -73,16 +75,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="7A69707B-C807-4DE6-12B3-352B9409E20D" name="Дом PK">
+<identifier id="D9A00B44-2599-03FB-4B7C-ADE7AC654968" name="АДРЕС PK">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-27 13:38:56 UTC</createdTime>
+<createdTime>2024-11-28 10:21:34 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>57034A64-0AAB-F11D-5B73-C6D95E6C4E23</attributeRef>
+<attributeRef>9A7F363D-AA85-7065-D61A-BCF111DF84B2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

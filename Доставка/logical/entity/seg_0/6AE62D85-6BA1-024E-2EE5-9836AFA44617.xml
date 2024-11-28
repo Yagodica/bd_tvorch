@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6AE62D85-6BA1-024E-2EE5-9836AFA44617" name="КЛИЕНТ">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:28 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>CLIENT</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id клиента" id="A419A065-CBBC-C861-8189-16A4D2E910B8">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:47 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>client_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="Имя" id="EE8D5D9E-3028-9B2E-0FA2-4ECEFBB0EEEB">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:47 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<preferredAbbreviation>name</preferredAbbreviation>
+</Attribute>
+<Attribute name="Фамилия" id="7B0CFC41-2C62-C604-3005-91C36A2983F5">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:47 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<preferredAbbreviation>surname</preferredAbbreviation>
+</Attribute>
+<Attribute name="Номер телефона" id="059E3180-ED02-46DE-3C14-9A19DB712507">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:47 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<preferredAbbreviation> phone_num</preferredAbbreviation>
+</Attribute>
+<Attribute name="Электронная почта" id="4A830443-FA9C-A0CF-4D14-22D12C137AEB">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:33:48 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<preferredAbbreviation>email</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9676AAEE-59F7-D37E-F0B6-1610708E284C" name="КЛИЕНТ PK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-28 11:35:42 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A419A065-CBBC-C861-8189-16A4D2E910B8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
