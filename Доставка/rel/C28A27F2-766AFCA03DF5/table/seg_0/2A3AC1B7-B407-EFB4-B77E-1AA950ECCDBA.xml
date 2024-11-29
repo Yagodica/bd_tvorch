@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A3AC1B7-B407-EFB4-B77E-1AA950ECCDBA" name="CITY">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 08:11:57 UTC</createdTime>
+<generatorID>1D624D9C-EDDC-A3F7-4CCF-B6683ADE3888</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="city_id" id="84F94A97-BA7B-0405-3B7C-131657893EDC">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 08:11:57 UTC</createdTime>
+<generatorID>D47C7BF7-8E44-C1CF-C305-40DD05AEE784</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city_name" id="AF243697-13B8-D71F-7C68-63F15CA1AC8F">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 08:11:57 UTC</createdTime>
+<generatorID>4759615B-58CD-8AD8-57C6-3E3B1FC734BF</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7900560E-87E8-E7D2-82F4-4D4EAC60D8BE" name="CITY_PK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 08:11:57 UTC</createdTime>
+<generatorID>E7DABF7E-FB0F-103D-C57F-62D954742FBE</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84F94A97-BA7B-0405-3B7C-131657893EDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

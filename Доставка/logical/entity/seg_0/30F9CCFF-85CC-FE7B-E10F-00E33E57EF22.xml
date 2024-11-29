@@ -17,6 +17,7 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<preferredAbbreviation>SUPPLIER</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="id поставщика" id="15E68F51-DBBD-CCF2-0ED5-13C47A3DC298">
 <createdBy>ivan</createdBy>
@@ -57,10 +58,11 @@
 <createdBy>ivan</createdBy>
 <createdTime>2024-11-29 07:22:13 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <importedID>903496E3-3ABC-EF87-143B-69A5CEDB5E99</importedID>
 <engineerTo>
 <item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="false"/>
 <item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
 </engineerTo>
 <pk>true</pk>

@@ -67,12 +67,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>total_cost</preferredAbbreviation>
 </Attribute>
-<Attribute name="id поставщика" id="9B553DAA-6670-AC53-FD3F-2633C399C6FC">
+<Attribute name="id поставщика" id="CB68A0F6-94A1-47F9-0899-6DCADF213EFB">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-29 07:22:13 UTC</createdTime>
-<generatorID>C09D1AF6-87E2-B94D-B187-DB096EEC0408</generatorID>
+<createdTime>2024-11-29 08:08:42 UTC</createdTime>
+<generatorID>B6A59385-EABC-FA7F-99D4-9F6E860837F6</generatorID>
 <ownerDesignName>Доставка</ownerDesignName>
-<importedID>EA2826E0-C4CB-5260-6D8C-6BD616C67A4F</importedID>
 <engineerTo>
 <item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
 <item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
@@ -90,10 +89,11 @@
 <createdBy>ivan</createdBy>
 <createdTime>2024-11-29 07:22:13 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <importedID>0EDBDB33-ED03-6D7E-604A-54EB8123C36A</importedID>
 <engineerTo>
 <item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="false"/>
 <item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
 </engineerTo>
 <pk>true</pk>
