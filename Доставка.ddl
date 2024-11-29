@@ -9,6 +9,9 @@
 
 -- predefined type, no DDL - XMLTYPE
 
+CREATE DATABASE Delivery;
+USE Delivery;
+
 CREATE TABLE address (
     address_id             INTEGER NOT NULL,
     house_id_house         INTEGER,
