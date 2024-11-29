@@ -1,13 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A467B2F-B912-59A4-1C9E-217C7C56C43C" name="ЗАКАЗ">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A467B2F-B912-59A4-1C9E-217C7C56C43C" name="ЗАКАЗЫ">
 <createdBy>ivan</createdBy>
 <createdTime>2024-11-29 07:22:12 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>1F18E032-A858-5A4A-72CB-D27FE9B038E0</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -17,7 +15,7 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>ORDER</preferredAbbreviation>
+<preferredAbbreviation>ORDERS</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="id заказа" id="0B60FFAF-7286-CD57-5778-F35FDA8414C0">
 <createdBy>ivan</createdBy>
@@ -25,9 +23,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>BA475D17-D75B-828C-B6BA-3FB5552E7177</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,9 +37,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>ABAE1678-0A59-9498-A62D-346216721500</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,9 +52,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>6F1157AE-909C-C845-6E1C-83B1F71DC22C</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <referedAttribute>35CA4945-767D-1E3E-3179-CEFB88E75480</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -75,9 +67,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>A9C1AFE9-FD10-7C52-8558-EC28DA1E8F90</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <referedAttribute>51F0AA89-F518-8473-9F25-72F57A944BA6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,11 +82,23 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>49F9D58D-77D8-230D-A98E-8C9027273E3D</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <referedAttribute>758FBA26-1674-FD6F-6B06-0BA78664255A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id корзины" id="F121382B-84DC-2AC7-CDEC-3BBB1582EDC7">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 10:45:18 UTC</createdTime>
+<generatorID>58B60747-32DC-BC1E-637D-0FB49F0F4339</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<engineerTo>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
+</engineerTo>
+<referedAttribute>7ABA2A8D-CC0F-6669-319A-68D3BA81E735</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -110,9 +112,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>DE10FF74-7504-7E78-0F8A-3F1B0C175D4D</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -5,9 +5,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>6161C6A3-1E44-08D9-A1B1-54BF86BC5BD7</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -25,9 +23,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>42712147-B26E-8800-277F-D8A5BF39C4EB</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,9 +37,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>D50E725B-0EE8-FD0F-8185-8022430F8A63</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,9 +51,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>C980843C-1770-6E16-67F2-7A0B412DF75D</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -67,35 +59,15 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>total_cost</preferredAbbreviation>
 </Attribute>
-<Attribute name="id заказа" id="4C1D77F1-5875-1B19-FBFA-775C4043C888">
+<Attribute name="id заказа" id="A19DBA9E-8749-87E8-42AA-9D4F588467BD">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-29 07:22:13 UTC</createdTime>
-<generatorID>77C258C0-A82C-5918-95A1-51A3E4D4CFDF</generatorID>
+<createdTime>2024-11-29 10:44:40 UTC</createdTime>
+<generatorID>58B60747-32DC-BC1E-637D-0FB49F0F4339</generatorID>
 <ownerDesignName>Доставка</ownerDesignName>
-<importedID>0E4C1C0C-13CB-2220-1B72-98F4DE5F57E5</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <referedAttribute>0B60FFAF-7286-CD57-5778-F35FDA8414C0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id блюда" id="23577E66-68AD-FC98-524A-0CCE0EA4DC97">
-<createdBy>ivan</createdBy>
-<createdTime>2024-11-29 07:22:13 UTC</createdTime>
-<generatorID>6831D71D-8D07-A606-494C-1481BB9E5E5F</generatorID>
-<ownerDesignName>Доставка</ownerDesignName>
-<importedID>D2836A31-4D0A-3C5B-2052-8D9579FA49AB</importedID>
-<engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
-</engineerTo>
-<referedAttribute>9B44CAF1-C6B2-07F4-9C8F-836F7846F53E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -109,9 +81,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>76067E15-0BFC-2C8C-55F0-EF8C7A8A5353</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="D646BF77-4210-EA15-A2AF-09055E3AB054" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

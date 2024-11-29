@@ -5,9 +5,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>3CCA9D2D-9D4C-3548-7CDB-7E7ADD697220</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="EC700A4D-5ECB-A6FB-322C-12E4E65917A5" value="true"/>
 </engineerTo>
 <sourcePk>57EDEC84-7209-58D8-A81A-C4AB5DA8C55B</sourcePk>
 <identifying>false</identifying>
@@ -18,5 +16,4 @@
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>E506B260-0857-9980-A729-53A56448889E</targetEntity>
 <transferable>true</transferable>
-<deleteRule>NO ACTION</deleteRule>
 </Relation>

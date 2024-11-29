@@ -5,9 +5,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>1FE5B0D7-12AE-342F-7AA1-D3BB2DBB0AED</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -25,9 +23,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>9A7F363D-AA85-7065-D61A-BCF111DF84B2</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -42,9 +38,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>28A4AF19-5C5E-39E2-AB28-BAA27FBB3DBA</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>69ACB5B5-885D-974B-847C-27B129EAB079</referedAttribute>
@@ -60,9 +54,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>D2369F73-53F7-880A-9AD0-91DBDF6E4A5B</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>6D163159-6FC0-F247-2940-A871BD8F915B</referedAttribute>
@@ -78,9 +70,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <importedID>4D950B8C-C644-DB12-D8D1-35B31427AAF1</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="true"/>
 </engineerTo>
 <referedAttribute>758FBA26-1674-FD6F-6B06-0BA78664255A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -94,11 +84,10 @@
 <createdBy>ivan</createdBy>
 <createdTime>2024-11-29 07:22:13 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <importedID>D9A00B44-2599-03FB-4B7C-ADE7AC654968</importedID>
 <engineerTo>
-<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
-<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
-<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+<item key="C28A27F2-407A-0F05-F607-766AFCA03DF5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
