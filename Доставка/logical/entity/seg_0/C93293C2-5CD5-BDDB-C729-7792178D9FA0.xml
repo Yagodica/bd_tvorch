@@ -4,6 +4,7 @@
 <createdTime>2024-11-28 13:08:16 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -21,6 +22,7 @@
 <createdTime>2024-11-28 13:08:38 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,6 +36,7 @@
 <createdTime>2024-11-28 13:08:38 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,6 +50,7 @@
 <createdTime>2024-11-28 13:08:40 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,15 +59,16 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>total_cost</preferredAbbreviation>
 </Attribute>
-<Attribute name="id подкатегории" id="43B1E2BC-039D-E0D6-E5B0-04B5A75F492F">
+<Attribute name="id поставщика" id="EA2826E0-C4CB-5260-6D8C-6BD616C67A4F">
 <createdBy>ivan</createdBy>
-<createdTime>2024-11-28 13:15:35 UTC</createdTime>
-<generatorID>313CB39D-210C-C4BF-30CD-72C7A4AEEB5F</generatorID>
+<createdTime>2024-11-29 07:10:50 UTC</createdTime>
+<generatorID>17575B4A-E642-5450-FD09-1EA703484320</generatorID>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
-<referedAttribute>7778E694-EC79-A875-9557-3FDE55F5D8B6</referedAttribute>
+<referedAttribute>30C60225-B2F0-4F5A-C533-675A89A6341C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -76,6 +81,7 @@
 <createdTime>2024-11-28 13:09:28 UTC</createdTime>
 <ownerDesignName>Доставка</ownerDesignName>
 <engineerTo>
+<item key="D8EA3C28-866E-D952-BDB6-D91A85D5E227" value="true"/>
 <item key="7873AB7A-79C2-F4C0-8CDE-852AD20BB43A" value="true"/>
 </engineerTo>
 <pk>true</pk>
