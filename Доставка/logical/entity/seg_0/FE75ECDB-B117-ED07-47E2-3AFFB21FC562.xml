@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE75ECDB-B117-ED07-47E2-3AFFB21FC562" name="ЗАКУПКА">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:12 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>C93293C2-5CD5-BDDB-C729-7792178D9FA0</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>PURCHASE</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id закупки" id="8EED84F7-D9C3-5A77-B76E-44F6BA6779A9">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:13 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>DF50EA45-33A0-2EA9-CAC5-E133D5F64905</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>purchase_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="Дата закупки" id="204670C7-0F64-FC0C-7A21-419CBF3787F3">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:13 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>E7EF4B3B-8D6D-D21B-C2F4-A656E2A6F1C5</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>purchase_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="Общая стоимость" id="4F5EA90B-8E8B-8753-F9F1-EC541F7C6125">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:13 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>F9FE5ACE-47FB-04A3-C56E-1CD44A1C8120</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>total_cost</preferredAbbreviation>
+</Attribute>
+<Attribute name="id поставщика" id="9B553DAA-6670-AC53-FD3F-2633C399C6FC">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:13 UTC</createdTime>
+<generatorID>C09D1AF6-87E2-B94D-B187-DB096EEC0408</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>EA2826E0-C4CB-5260-6D8C-6BD616C67A4F</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<referedAttribute>15E68F51-DBBD-CCF2-0ED5-13C47A3DC298</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4CA9E26F-240D-D085-8CB0-07817E087C3C" name="ЗАКУПКА PK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 07:22:13 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<importedID>0EDBDB33-ED03-6D7E-604A-54EB8123C36A</importedID>
+<engineerTo>
+<item key="4690D4D2-E983-519E-0874-6971906D16C6" value="true"/>
+<item key="68B3F15C-002A-C457-FC3B-8866FD14693D" value="true"/>
+<item key="061E7FBD-5984-68FA-DD37-F4D5534B199E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8EED84F7-D9C3-5A77-B76E-44F6BA6779A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
