@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0191AF57-1BF0-A94E-4686-8420F07B5961" name="HOUSE">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:57 UTC</createdTime>
+<generatorID>ADC9817B-9D1E-B72A-87EF-D55AC6E05C05</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_house" id="DFB2E9B5-C606-DFB0-B853-23800A516BFE">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:57 UTC</createdTime>
+<generatorID>69ACB5B5-885D-974B-847C-27B129EAB079</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="house_num" id="C639146D-52CF-5677-814A-3347D0DEECA4">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:57 UTC</createdTime>
+<generatorID>153488DE-742C-6FBB-BAF7-571547ED4DA7</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_id_street" id="00475DBA-AC0C-0264-F2ED-21C9FF5C929E">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:57 UTC</createdTime>
+<generatorID>065C50A1-27B6-B015-B0CC-6EB9C1CAC50B</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="916BEFBC-89CF-6632-A983-EBAB6A1C03A1" referredColumn="E34C3A78-A148-DCEE-2D5F-ED0010B6CE0C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB91A302-21BF-6430-5468-30D7091933F4" name="HOUSE_PK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:57 UTC</createdTime>
+<generatorID>BE837721-DDCA-F424-0F65-39E6D869CC79</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFB2E9B5-C606-DFB0-B853-23800A516BFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC5DE003-4B98-1D74-C3B6-7AE4E5D061D6" name="HOUSE_STREET_FK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-11-29 13:56:58 UTC</createdTime>
+<generatorID>0E2ECF7A-FABA-135E-FCFA-6A393707CFEC</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00475DBA-AC0C-0264-F2ED-21C9FF5C929E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
