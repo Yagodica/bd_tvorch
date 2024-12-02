@@ -59,14 +59,6 @@
 <colUsage columnID="3071F341-A940-4AF1-1A85-867447E63A43"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D02D7A34-7034-F210-85D8-27D766BA4FF6" name="HOUSE__IDX">
-<createdBy>ivan</createdBy>
-<createdTime>2024-12-02 11:20:47 UTC</createdTime>
-<ownerDesignName>Доставка</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>57CD8955-08BE-1B50-C735-B6C0B2DEEE52</relationGeneratorID>
-</ind_PK_UK>
 <ind_PK_UK id="301E68B4-08A0-D64D-AC7E-913D1A22170B" name="HOUSE_STREET_FK">
 <createdBy>ivan</createdBy>
 <createdTime>2024-12-02 11:20:47 UTC</createdTime>

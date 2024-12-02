@@ -32,7 +32,7 @@
 <importedID>ABAE1678-0A59-9498-A62D-346216721500</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>order_date</preferredAbbreviation>
 </Attribute>
@@ -42,7 +42,7 @@
 <ownerDesignName>Доставка</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <preferredAbbreviation>required_date</preferredAbbreviation>
 </Attribute>
