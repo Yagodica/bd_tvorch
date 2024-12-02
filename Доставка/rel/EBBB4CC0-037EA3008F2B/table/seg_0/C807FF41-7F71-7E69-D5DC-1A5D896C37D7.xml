@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C807FF41-7F71-7E69-D5DC-1A5D896C37D7" name="DISH">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>E506B260-0857-9980-A729-53A56448889E</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dish_id" id="E9A74FDD-6A1C-731B-6327-6238FA16F157">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>9B44CAF1-C6B2-07F4-9C8F-836F7846F53E</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dish_name" id="6759F7B6-92CA-D5E3-E51B-C0BFFC14D1AB">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>C5B60C8C-FB51-C22C-FA91-E0716E1FD2A8</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dish_description" id="DE02720B-2523-ECD9-1CF9-352B894A22F6">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>E2A31FA9-9DFF-0F14-91DB-A6091CC26883</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dish_price" id="822D2A1D-AC6E-9ED2-F67F-B4E4645B804E">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>87AC0975-6EEC-6DCE-A4E1-9C3874CC7988</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_category_id" id="222613CB-60E0-1FFB-142C-9DA3C61D9D19">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>56AC5D0C-FB2C-DE32-AFE8-FEAE79DD6146</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFB6F4D0-DB84-825A-2E56-C26F61BB812B" referredColumn="358539DA-5A38-8AF9-ADF2-18C2ADE22A53"/>
+</associations>
+</Column>
+<Column name="SUPPLIER_supplier_id" id="FE208CB7-B311-D5FC-6A0A-1D9CA9263884">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>54F71D39-F5B2-EE07-49BE-B8646AACA5CC</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E06985C8-F2CD-C650-E46F-6F703EC7B48C" referredColumn="A6FD50D6-6F3B-057B-9292-B7B40812E948"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18C0382B-1965-0ED3-5DB1-2F9D2E4739E0" name="DISH_PK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>AB6C16CA-97FC-143C-ECDB-B600729DC7BE</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9A74FDD-6A1C-731B-6327-6238FA16F157"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F10349-73AD-DF7A-2BE5-73AD875A479D" name="DISH_CATEGORY_FK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>CCD391DA-C061-057C-87E2-BB938C197C70</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="222613CB-60E0-1FFB-142C-9DA3C61D9D19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="620207DC-68F8-D967-09ED-96223277A7E6" name="DISH_SUPPLIER_FK">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:37:57 UTC</createdTime>
+<generatorID>A7F13B0A-C1F5-FBE1-D7EB-57877DB40E27</generatorID>
+<ownerDesignName>Доставка</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE208CB7-B311-D5FC-6A0A-1D9CA9263884"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

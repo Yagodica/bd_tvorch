@@ -82,6 +82,26 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Общая сумма заказа" id="A617E162-5C11-5B1B-A84D-08953A0A5260">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:23:37 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>order_total_amount</preferredAbbreviation>
+</Attribute>
+<Attribute name="Количество" id="21C08185-2AB0-E10C-BE07-DFF2B0FFA08E">
+<createdBy>ivan</createdBy>
+<createdTime>2024-12-02 19:32:23 UTC</createdTime>
+<ownerDesignName>Доставка</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>quantity</preferredAbbreviation>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="FBD65F40-841F-E570-EB8C-CA8B6DDACB1F" name="Заказ PK">
