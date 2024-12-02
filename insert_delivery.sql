@@ -26,15 +26,18 @@ INSERT INTO house (id_house, house_num, street_id_street) VALUES
 (6, 522, 3),
 (7, 53, 5),
 (8, 50, 1),
-(9, 156, 6);
+(9, 301, 1),
+(10, 151, 1),
+(11, 156, 6);
 
 -- Вставка данных в таблицу apartment
 INSERT INTO apartment (apartment_id, apartment_num, house_id_house) VALUES
 (1, 10, 1),
-(2, 102, 1),
+(2, 102, 2),
 (3, 103, 2),
 (4, 104, 3),
-(5, 104, 4);
+(5, 1001, 4),
+(6, 104, 5);
 
 -- Вставка данных в таблицу client
 INSERT INTO client (client_id, client_name, client_surname, phone_num, client_email) VALUES
@@ -42,28 +45,32 @@ INSERT INTO client (client_id, client_name, client_surname, phone_num, client_em
 (2, 'Jane', 'Smith', '0987654321', 'jane.smith@example.com'),
 (3, 'Alice', 'Johnson', '1231231234', 'alice.johnson@example.com'),
 (4, 'Bob', 'Brown', '4324324321', 'bob.brown@example.com'),
-(5, 'Charlie', 'Davis', '7777777566', 'charlie.davis@example.com'),
-(6, 'Charl', 'Davis', '7828282882', 'charl.davis@example.com'),
-(7, 'Arlie', 'Davis', '1234123412', 'arlie.davis@example.com'),
-(8, 'Lie', 'Davis', '8238382188', 'lie.davis@example.com'),
-(9, 'Eve', 'Wilson', '6786712389', 'eve.wilson@example.com'),
-(10, 'Ivan', 'Wilson', '617862312389', 'ivan.wilson@example.com');
+(5, 'Danya', 'Brown', '4324324321', 'danya.brown@example.com'),
+(6, 'Charlie', 'Davis', '7777777566', 'charlie.davis@example.com'),
+(7, 'Charl', 'Davis', '7828282882', 'charl.davis@example.com'),
+(8, 'Arlie', 'Davis', '1234123412', 'arlie.davis@example.com'),
+(9, 'Lie', 'Davis', '8238382188', 'lie.davis@example.com'),
+(10, 'Eve', 'Wilson', '6786712389', 'eve.wilson@example.com'),
+(11, 'Ivan', 'Wilson', '617862312389', 'ivan.wilson@example.com'),
+(12, 'Ivan', 'Ivantey', '231241111389', 'ivan.wilson@gmail.com');
 
 -- Вставка данных в таблицу address частный дом
 INSERT INTO address (address_id, house_id_house, client_client_id) VALUES
-(1, 5, 1),
-(2, 6, 2),
-(3, 7, 3),
-(4, 8, 4),
-(5, 9, 5);
+(1, 6, 1),
+(2, 7, 2),
+(3, 8, 3),
+(4, 9, 4),
+(5, 10, 5),
+(6, 11, 6);
 
 -- Вставка данных в таблицу address квартира
 INSERT INTO address (address_id, apartment_apartment_id, client_client_id) VALUES
-(6, 1, 6),
-(7, 2, 7),
-(8, 3, 8),
-(9, 4, 9),
-(10, 5, 10);
+(7, 1, 7),
+(8, 2, 8),
+(9, 3, 9),
+(10, 4, 10),
+(11, 5, 11),
+(12, 6, 12);
 
 -- Вставка данных в таблицу order_status
 INSERT INTO order_status (order_status_id, order_status_name) VALUES
@@ -71,7 +78,8 @@ INSERT INTO order_status (order_status_id, order_status_name) VALUES
 (2, 'Обработка'),
 (3, 'Отправленный'),
 (4, 'Доставленный'),
-(5, 'Отменено');
+(5, 'Проблема'),
+(6, 'Отменено');
 
 -- Вставка данных в таблицу orders
 INSERT INTO orders (order_id, order_date, required_date, address_address_id, order_status_order_status_id, client_client_id) VALUES
