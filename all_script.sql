@@ -141,15 +141,33 @@ BEGIN
     SET NEW.required_date = DATE_ADD(NEW.order_date, INTERVAL 1 HOUR);
 END; //
    
-DELIMITER;
+DELIMITER ;
    
 
 INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id)
-VALUES (12, '2024-12-02 16:51:00', 1, 1, 1);
+VALUES (11, CURDATE(), 1, 1, 1);
+
+
+-- Обновляем статус заказа на "Обработка" (состояние 2)
+
+DELIMITER //
+
+CREATE TRIGGER after_order_insert
+AFTER INSERT ON orders
+FOR EACH ROW
+BEGIN
+    UPDATE orders
+    SET order_status_order_status_id = 2
+    WHERE order_id = NEW.order_id;
+END; //
+
+DELIMITER ;
+
+
+INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount, quantity)
+VALUES (11, CURDATE(), 1, 1, 1, 0, 0);
 
 
 
 
 
-
-   
