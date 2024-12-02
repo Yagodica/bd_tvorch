@@ -74,32 +74,17 @@ INSERT INTO order_status (order_status_id, order_status_name) VALUES
 (5, 'Отменено');
 
 -- Вставка данных в таблицу orders
-INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, cart_cart_id) VALUES
-(1, CURDATE(), 1, 1, 1, 1),
-(2, CURDATE(), 2, 3, 2, 2),
-(3, CURDATE(), 3, 3, 3, 3),
-(4, CURDATE(), 4, 3, 4, 4),
-(5, CURDATE(), 5, 3, 5, 5),
-(6, CURDATE(), 6, 3, 6, 6),
-(7, CURDATE(), 7, 4, 7, 7),
-(8, CURDATE(), 8, 4, 8, 8),
-(9, CURDATE(), 9, 5, 9, 9),
-(10, CURDATE(), 10, 2, 10, 10);
-
-
--- Вставка данных в таблицу cart
-INSERT INTO cart (cart_id, quantity, total_cost, orders_order_id) VALUES
-(1, 2, 2000, 1),
-(2, 1, 1000, 2),
-(3, 3, 3000, 3),
-(4, 2, 2000, 4),
-(5, 1, 1000, 5),
-(6, 2, 2000, 1),
-(7, 1, 1000, 2),
-(8, 3, 3000, 3),
-(9, 2, 2000, 4),
-(10, 1, 1000, 5);
-
+INSERT INTO orders (order_id, order_date, required_date, address_address_id, order_status_order_status_id, client_client_id) VALUES
+(1, "2024-12-02 16:51:00", "2024-12-02 17:51:00", 1, 1, 1),
+(2, "2024-12-02 16:20:23", "2024-12-02 17:20:23", 2, 1, 2),
+(3, "2024-11-05 16:37:23", "2024-11-05 17:37:23", 3, 4, 3),
+(4, "2024-10-06 11:20:23", "2024-10-06 12:20:23", 4, 4, 4),
+(5, "2024-5-01 13:30:50", "2024-5-01 14:30:50", 5, 4, 5),
+(6, "2024-5-22 19:20:23", "2024-5-22 20:20:23", 6, 5, 6),
+(7, "2024-12-02 16:37:23", "2024-12-02 17:37:23", 7, 3, 7),
+(8, "2024-12-02 16:37:23", "2024-12-02 18:37:23", 8, 3, 8),
+(9, "2024-12-02 16:37:23", "2024-12-02 19:37:23", 9, 3, 9),
+(10, "2024-12-02 16:37:23", "2024-12-02 17:37:23", 10, 2, 10);
 
 -- Вставка данных в таблицу category
 INSERT INTO category (category_id, category_name) VALUES
@@ -122,23 +107,21 @@ INSERT INTO supplier (supplier_id, supplier_name) VALUES
 -- Вставка данных в таблицу dish
 INSERT INTO dish (dish_id, dish_name, dish_description, dish_price, category_category_id, supplier_supplier_id) VALUES
 (1, 'Маргарита', 'Классическая пицца', 1000, 1, 1),
-(2, 'Pepperoni', 'Pizza with pepperoni', 1200, 1, 2),
-(3, 'Caesar Salad', 'Salad with chicken and Caesar dressing', 800, 3, 3),
-(4, 'Cheeseburger', 'Burger with cheese', 1500, 2, 4),
-(5, 'Chocolate Cake', 'Delicious chocolate cake', 600, 4, 5),
-(6, 'Coca Cola', 'Soft drink', 200, 5, 6);
-
-
-
-
-
-
+(2, 'Пеперони', 'Пицца с пепперони', 1200, 1, 2),
+(3, 'Салат Цезарь', 'Салат с курицей и соусом Цезарь', 800, 3, 3),
+(4, 'Чизбургер', 'Бургер с сыром', 1500, 2, 4),
+(5, 'Шоколадный торт', 'Вкусный шоколадный торт', 600, 4, 5),
+(6, 'Капучино', 'кофе', 100, 5, 6);
 
 -- Вставка данных в таблицу dish_cart
-INSERT INTO dish_cart (cart_cart_id, dish_dish_id) VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 6);
+insert INTO cart (dish_dish_id, orders_order_id) VALUES
+(1, 1), (2, 1), (6, 1),
+(2, 2), (5, 2), (4, 2),
+(2, 3), (4, 3),
+(5, 4),
+(4, 5),
+(1, 6),
+(2, 7),
+(3, 8),
+(3, 9),
+(6, 10);
