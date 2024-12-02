@@ -148,4 +148,8 @@ INSERT INTO orders (order_id, order_date, address_address_id, order_status_order
 VALUES (12, '2024-12-02 16:51:00', 1, 1, 1);
 
 
+
+
+
+
    
