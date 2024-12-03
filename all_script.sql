@@ -175,4 +175,69 @@ insert INTO cart (cart_id, orders_order_id, dish_dish_id, quantity) VALUES
 (15, 10, 4, 1);
 
 
+-- Скидка за опоздание
 
+DELIMITER //
+
+CREATE PROCEDURE apply_discount_orders(IN discount INT)
+BEGIN
+    UPDATE orders
+    SET order_total_amount = order_total_amount * (100 - discount) / 100
+    WHERE required_date < NOW()
+      AND order_status_order_status_id = 3;
+END //
+
+DELIMITER ;
+
+
+call apply_discount_orders(10);
+
+-- Перерасчет суммы
+
+drop procedure if exists recalculate_order_totals;
+
+DELIMITER //
+
+CREATE PROCEDURE recalculate_order_totals()
+begin
+    CREATE TEMPORARY TABLE IF NOT EXISTS temp_order_totals (
+        order_id INT,
+        new_total_amount DECIMAL(10, 2)
+    );
+
+    TRUNCATE TABLE temp_order_totals;
+
+    INSERT INTO temp_order_totals (order_id, new_total_amount)
+    SELECT c.orders_order_id, SUM(c.quantity * d.dish_price)
+    FROM cart c
+    JOIN dish d ON c.dish_dish_id = d.dish_id
+    GROUP BY c.orders_order_id;
+
+    UPDATE orders o
+    JOIN temp_order_totals t ON o.order_id = t.order_id
+    SET o.order_total_amount = t.new_total_amount;
+	
+    DROP TEMPORARY TABLE IF EXISTS temp_order_totals;
+END //
+
+DELIMITER ;
+
+
+call recalculate_order_totals();
+
+
+-- 2.4. Пользователи и привилегии 
+
+-- Создание учетной записи
+create user if not exists 'ivan_ivantey'@'localhost' IDENTIFIED by '1234';
+
+-- Установка пароля
+set password for 'ivan_ivantey'@'localhost' = '1234';
+
+-- Предоставление привилегий пользователю ко всем таблицам базы данных
+grant select, insert, update, delete on delivery.* to 'ivan_ivantey'@'localhost';
+
+-- Проверка привилегий
+select User, Host from mysql.user;
+
+SHOW GRANTS FOR 'ivan_ivantey'@'localhost';
