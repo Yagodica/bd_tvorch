@@ -57,22 +57,16 @@ FROM
 -- d. Запрос с использованием группировок, группировочных функций и условий на группы (HAVING);
 
 SELECT
-    c.client_id,
-    concat(c.client_name, ' ', c.client_surname) as FI,
-    COUNT(o.order_id) AS total_orders,
-    SUM(d.dish_price) AS total_order_value
+    c.orders_order_id,
+    SUM(c.quantity * d.dish_price) AS total_amount
 FROM
-    orders o
-INNER JOIN
-    client c ON o.client_client_id = c.client_id
-INNER JOIN
-    cart ca ON o.order_id = ca.orders_order_id
-INNER JOIN
-    dish d ON ca.dish_dish_id = d.dish_id
+    cart c
+JOIN
+    dish d ON c.dish_dish_id = d.dish_id
 GROUP BY
-    c.client_id
+    c.orders_order_id
 HAVING
-    COUNT(o.order_id) > 0;
+    total_amount < 1000;
    
 -- e. Запрос с использованием левого/правого соединения (LEFT/RIGHT JOIN);
 
@@ -134,7 +128,7 @@ inner join
   
 DELIMITER //
 
-CREATE TRIGGER required_date_insert
+CREATE TRIGGER insert_required_date
 BEFORE INSERT ON orders
 FOR EACH ROW
 BEGIN
@@ -144,30 +138,41 @@ END; //
 DELIMITER ;
    
 
-INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id)
-VALUES (11, CURDATE(), 1, 1, 1);
+INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount)
+VALUES (11, CURDATE(), 1, 1, 1, 0);
 
 
--- Обновляем статус заказа на "Обработка" (состояние 2)
+-- считает новую сумму заказа при изменении корзины если статус заказа В ожидании (Обработка, Проблема, Отменено)
 
 DELIMITER //
 
-CREATE TRIGGER after_order_insert
-AFTER INSERT ON orders
+CREATE TRIGGER update_order_total_amount AFTER INSERT ON cart
 FOR EACH ROW
 BEGIN
-    UPDATE orders
-    SET order_status_order_status_id = 2
-    WHERE order_id = NEW.order_id;
+    DECLARE order_status_id INT;
+    DECLARE new_total_amount DECIMAL(10, 2);
+   
+    SELECT order_status_order_status_id INTO order_status_id
+    FROM orders
+    WHERE order_id = NEW.orders_order_id;
+
+    IF order_status_id IN (1, 2, 5, 6) THEN
+        SELECT SUM(c.quantity * d.dish_price) INTO new_total_amount
+        FROM cart c
+        JOIN dish d ON c.dish_dish_id = d.dish_id
+        WHERE c.orders_order_id = NEW.orders_order_id;
+
+        UPDATE orders
+        SET order_total_amount = new_total_amount
+        WHERE order_id = NEW.orders_order_id;
+    END IF;
 END; //
 
 DELIMITER ;
 
 
-INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount, quantity)
-VALUES (11, CURDATE(), 1, 1, 1, 0, 0);
-
-
+insert INTO cart (cart_id, orders_order_id, dish_dish_id, quantity) VALUES
+(15, 10, 4, 1);
 
 
 
