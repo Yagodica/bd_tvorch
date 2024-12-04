@@ -125,7 +125,8 @@ inner join
 
 -- 2.2.	Триггеры
 -- тригер который при создании заказа в желаемую дату добавляет дату создания + 1 час
-  
+
+DROP TRIGGER insert_required_date;
 DELIMITER //
 
 CREATE TRIGGER insert_required_date
@@ -138,9 +139,11 @@ END; //
 DELIMITER ;
    
 
-INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount)
-VALUES (11, CURDATE(), 1, 1, 1, 0);
+INSERT INTO orders (order_id, order_date, required_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount)
+VALUES (11, NOW(), NOW(), 1, 1, 1, 0);
 
+INSERT INTO orders (order_id, order_date, address_address_id, order_status_order_status_id, client_client_id, order_total_amount)
+VALUES (12, NOW(), 1, 1, 1, 0);
 
 -- считает новую сумму заказа при изменении корзины если статус заказа В ожидании (Обработка, Проблема, Отменено)
 
